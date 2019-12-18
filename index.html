@@ -5,8 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/media.css">
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
@@ -15,20 +18,31 @@
 </head>
 <body>
 <div class="container">
-    <div class="row header">
-        <div class="col-sm-4 logo ">
+    <div class=" header">
+        <div class=" logo ">
             <img src="img/Logo.png">
         </div>
 
-        <div class="col-sm-8 nav-bar ">
+        <div class="nav-bar" >
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about" >About</a>
+                <a href="#products">Products & Services</a>
+                <a href="#StayEngaged">Stay Engaged</a>
+                <a href="#ContactUs">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
 
-            <ul class="nav">
+            <ul class="nav "  id="js-menu">
                 <li>About</li>
                 <li>Products & Services</li>
                 <li>Stay Engaged</li>
                 <li>Contact Us</li>
                 <li><i class="fa fa-search" aria-hidden="true"></i></li>
             </ul>
+
         </div>
     </div>
 </div>
@@ -254,7 +268,7 @@
     </div>
 </div>
 <div class="infin">
-
+<img src="img/infin.png">
 </div>
 <div class="footer">
     <div class="footer-fill-color">
@@ -291,10 +305,22 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
 
+</script>
 <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
 <script src="owlcarousel/dist/owl.carousel.min.js"></script>
 <script src="https://use.fontawesome.com/f5790182d7.js"></script>
 <script type="text/javascript" src="assets/js/js-file.js"></script>
+
 </body>
 </html>
