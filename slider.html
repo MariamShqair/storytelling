@@ -1,0 +1,202 @@
+<html>
+<head>
+    <title>slider</title>
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        .owl-prev{
+            left:30px;
+        }
+        .owl-next{
+            right: 30px;
+        }
+        .owl-prev , .owl-next{
+            position: absolute;
+            top:30%;
+        }
+        .owl-prev span , .owl-next span{
+            font-size: 60px;
+            color:orangered;
+        }
+        .owl-theme .owl-nav[ class*="owl-"]:hover{
+            background-color: transparent;
+        }
+        .item{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin: auto;
+        }
+        .item img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+        .story_Telear_this_week{
+            max-width: 1170px;
+            margin: auto ;
+            position: relative;
+            font-weight: bold;
+            font-family: Poppins;
+            padding: 60px 0 30px 0;
+            text-align: center;
+            background: url("img/backgroundTelear.png") no-repeat fixed center center;
+
+        }
+        .story_Telear_this_week  h1{
+            font-size: 36px;
+            font-weight:400 ;
+            color: rgb(0, 0, 0);
+            line-height: 0.611;
+            margin-bottom: 35px;
+        }
+        .story_Telear_this_week  h1 span{
+            color:#f58220;
+        }
+
+        .story_Telear_this_week h2{
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            line-height: 0.917;
+            margin: 20px 0;
+        }
+        .story_Telear_this_week p{
+            font-size: 13px;
+            color: rgb(93, 93, 93);
+            line-height: 1.693;
+            padding: 15px 5%;
+            max-width: 480px;
+            margin: auto;
+        }
+        .owl-carousel{
+            max-width: 600px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container story_Telear_this_week">
+    <h1>Story <span>Telear</span>  of this week</h1>
+    <div class=" owl-carousel owl-theme">
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl1.png" class="card-img-top owl-lazy" >
+                    </div>
+
+                </div>
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+                    </div>
+
+                </div>
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl2.png"class="card-img-top owl-lazy">
+                    </div>
+
+                </div>
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+                    </div>
+
+                </div>
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl5.png" class="card-img-top owl-lazy">
+                    </div>
+
+                </div>
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+                    </div>
+
+                </div>
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl4.png" class="card-img-top owl-lazy">
+                    </div>
+
+                </div>
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+                    </div>
+
+                </div>
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl3.png" class="card-img-top owl-lazy">
+                    </div>
+
+                </div>
+        <div class="item">
+                    <div class="card">
+                        <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+                    </div>
+
+                </div>
+    </div>
+    <h2>Lubna Samara</h2>
+    <h3>Business Development</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 2018</p>
+
+</div>
+<script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+<script src="owlcarousel/dist/owl.carousel.js"></script>
+<script src="https://use.fontawesome.com/f5790182d7.js"></script>
+<script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="owlcarousel/docs/assets/vendors/jquery.mousewheel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        autoplay:true,
+        autoplayHoverPause:true,
+        lazyLoad:true,
+        loop:true,
+        margin:5,
+        stagePadding:5 ,
+        responsive:{
+            0:{
+                items:1,
+                dots:false
+            },
+            485:{
+                items:2,
+                dots: false
+            },
+            728:{
+                items:3,
+                dots:false
+            },
+            960:{
+                items:4,
+                dots: false
+            }
+            ,
+            1200:{
+                items:5,
+                dots: true
+            }
+        }
+
+
+    });
+
+    $('.owl-carousel').on('mousewheel','.owl-stage',function (e) {
+        if(e.deltaY>0){
+            $('.owl-carousel').trigger('next.owl');
+        }else{
+            $('.owl-carousel').trigger('prev.owl');
+        }
+        e.preventDefault();
+
+    });
+</script>
+</body>
+</html>

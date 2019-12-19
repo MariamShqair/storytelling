@@ -6,14 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/media.css">
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
@@ -25,7 +27,7 @@
 
         <div class="nav-bar" >
             <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">Home</a>
+                <a href="#home" >Home</a>
                 <a href="#about" >About</a>
                 <a href="#products">Products & Services</a>
                 <a href="#StayEngaged">Stay Engaged</a>
@@ -52,7 +54,7 @@
         <div class="story_header">
             <h1>Stories </h1><h1>We like.</h1>
         </div>
-            <div class="story_bar"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="story_bar"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </div>
     <div class="stories_cards">
 
@@ -99,7 +101,7 @@
         </div>
         <div class="story_card">
             <div class="img-wrapper"><img src="img/phone.png">
-        </div>
+            </div>
             <div class="card_body">
                 <h3>palestine</h3>
                 <p>Urban Farm Kits: The solution to city farming.</p>
@@ -117,23 +119,74 @@
     </div>
 
 </div>
-<div class="container-fluid story_Telear_this_week">
-    <div>
-        <h1>Story <span>Telear</span>  of this week</h1>
-
-        <div class="employee owl-carousel owl-theme">
-            <div class="item"><img src="img/sl1.png"></div>
-            <div class="item"><img src="img/sl2.png"></div>
-            <div class="item"><img src="img/sl5.png"></div>
-            <div class="item"><img src="img/sl4.png"></div>
-            <div class="item"><img src="img/sl3.png"></div>
+<div class="container story_Telear_this_week">
+    <h1>Story <span>Telear</span>  of this week</h1>
+    <div class=" owl-carousel owl-theme">
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl1.png" class="card-img-top owl-lazy" >
+            </div>
 
         </div>
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+            </div>
 
-        <h2>Lubna Samara</h2>
-        <h3>Business Development</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 2018</p>
+        </div>
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl2.png"class="card-img-top owl-lazy">
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl5.png" class="card-img-top owl-lazy">
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl4.png" class="card-img-top owl-lazy">
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl3.png" class="card-img-top owl-lazy">
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="card">
+                <img data-src="img/sl1.png" class="card-img-top owl-lazy">
+            </div>
+
+        </div>
     </div>
+    <h2>Lubna Samara</h2>
+    <h3>Business Development</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 2018</p>
+
 </div>
 <div class="counter" >
     <div class="counter-bg-color">
@@ -317,10 +370,56 @@
     }
 
 </script>
-<script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
-<script src="owlcarousel/dist/owl.carousel.min.js"></script>
-<script src="https://use.fontawesome.com/f5790182d7.js"></script>
 <script type="text/javascript" src="assets/js/js-file.js"></script>
+<script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+<script src="owlcarousel/dist/owl.carousel.js"></script>
+<script src="https://use.fontawesome.com/f5790182d7.js"></script>
+<script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="owlcarousel/docs/assets/vendors/jquery.mousewheel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        autoplay:true,
+        autoplayHoverPause:true,
+        lazyLoad:true,
+        loop:true,
+        margin:5,
+        stagePadding:5 ,
+        responsive:{
+            0:{
+                items:1,
+                dots:false
+            },
+            485:{
+                items:2,
+                dots: false
+            },
+            728:{
+                items:3,
+                dots:false
+            },
+            960:{
+                items:4,
+                dots: false
+            }
+            ,
+            1200:{
+                items:5,
+                dots: true
+            }
+        }
 
+
+    });
+
+    $('.owl-carousel').on('mousewheel','.owl-stage',function (e) {
+        if(e.deltaY>0){
+            $('.owl-carousel').trigger('next.owl');
+        }else{
+            $('.owl-carousel').trigger('prev.owl');
+        }
+        e.preventDefault();
+
+    });
+</script>
 </body>
 </html>
